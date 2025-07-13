@@ -1,0 +1,6 @@
+# 在项目根目录创建.gitignore文件
+venv/
+__pycache__/
+*.pyc
+.env
+.pytest_cache/
