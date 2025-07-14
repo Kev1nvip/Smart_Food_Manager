@@ -1,0 +1,19 @@
+# config/freshness_config.yaml
+model:
+  name: "ResNet50_vd"
+  custom_model_path: "./models/freshness_model.pdmodel"
+  custom_params_path: "./models/freshness_model.pdiparams"
+  
+labels:
+  - "新鲜"
+  - "一般"
+  - "轻微变质"
+  - "严重变质"
+
+thresholds:
+  high_confidence: 0.8
+  low_confidence: 0.5
+  
+preprocessing:
+  max_size: 1024
+  normalize: true
